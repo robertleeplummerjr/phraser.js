@@ -1,0 +1,29 @@
+{
+  "name": "phraser.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/robertleeplummerjr/phraser.js",
+  "authors": [
+    "robertleeplummerjr@gmail.com"
+  ],
+  "description": "find text in a string and do stuff with it",
+  "main": "Phraser.js",
+  "keywords": [
+    "search",
+    "highlight",
+    "find",
+    "parse",
+    "text"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rangy-official": "~1.3.0-alpha.20140921",
+    "jquery": "~2.1.1"
+  }
+}

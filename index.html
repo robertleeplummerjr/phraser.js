@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Phraser</title>
+	<style>
+		.rangyPhrase {
+			background-color: lightskyblue;
+		}
+	</style>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="Phraser.js"></script>
+	<script src="bower_components/rangy-official/rangy-core.js"></script>
+	<script src="rangy-phraser.js"></script>
+	<script>
+/*
+		//get highlights
+		var highlights = JSON.parse(sessionStorage.getItem('highlights') || '[]');
+
+		//save highlights
+		window.onbeforeunload = function() {
+			sessionStorage.setItem('highlights', JSON.stringify(highlights));
+		};
+
+		document.onmouseup = function(e) {
+			var sel = rangy.getSelection(),
+				str = sel.toString();
+
+			if (str.length > 0) {
+				highlights.push(str);
+			}
+			console.log(highlights);
+		};
+*/
+	</script>
+</head>
+<body>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales tristique sem eu semper. Proin turpis ipsum, consequat vel faucibus sed, tristique quis ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent malesuada justo dolor, eu auctor mi mollis sit amet. Sed elementum, magna eu ultrices dapibus, tellus metus sodales lacus, vitae tempor felis lacus ut mauris. Aenean eget imperdiet mi. Donec maximus, velit eu euismod euismod, massa felis imperdiet arcu, vel congue leo nulla ut justo. Maecenas quis mauris quam. Morbi dictum, orci eget consectetur condimentum, magna erat ornare massa, et euismod velit ex ac libero. Etiam congue pellentesque sapien. Duis et ornare felis, ac laoreet metus. Nulla nec ligula blandit, ornare nulla et, tincidunt metus. Aliquam sagittis mollis felis a fermentum. Sed rhoncus semper nunc, at sollicitudin sem dapibus ac. Nulla eros nisl, cursus nec urna in, gravida ullamcorper leo.
+</p>
+<p>
+	Donec vitae erat ipsum. Aliquam erat volutpat. In hac habitasse platea dictumst. Ut congue urna at urna pharetra, id feugiat diam porta. Sed in tempor nulla. In venenatis arcu nulla, eget luctus eros imperdiet sit amet. Donec commodo sollicitudin porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed elit sem, aliquet sagittis ante maximus, scelerisque volutpat enim. Pellentesque nec dui quis metus congue pretium. Sed molestie vitae nisi vel congue.
+</p>
+<p>
+	Mauris massa lectus, imperdiet quis est sed, condimentum rutrum lorem. Praesent eu justo consectetur, luctus libero eget, commodo massa. Suspendisse suscipit orci eros, nec finibus eros suscipit at. Ut lobortis eros vel dapibus accumsan. Sed erat eros, tincidunt sed tempor egestas, condimentum vel ante. Nulla ornare interdum lacus ut suscipit. Etiam arcu sem, condimentum vel massa eget, tincidunt facilisis erat. Nam iaculis neque et enim mollis, ut pretium ipsum euismod. Aenean molestie efficitur magna at tristique. Curabitur dictum venenatis tempor. Duis malesuada faucibus porta. Mauris vehicula volutpat turpis, vitae interdum massa fermentum eget. Donec a arcu fringilla, interdum ante id, interdum ligula. Quisque tempus sapien vitae arcu venenatis imperdiet. Etiam vulputate quam nec aliquet pharetra.
+</p>
+<p>
+	Aliquam condimentum et mi non luctus. Phasellus aliquam nibh ut metus rhoncus consectetur. Maecenas dictum a nulla et iaculis. Suspendisse lorem ex, faucibus et convallis vitae, ullamcorper et odio. Duis volutpat lacinia mattis. Phasellus auctor, leo quis eleifend molestie, ante dui aliquet est, interdum facilisis turpis ipsum nec orci. Vestibulum augue sem, luctus id magna vulputate, semper euismod libero. Quisque eget libero eget dui dapibus venenatis. Nullam tortor mauris, vehicula eget sapien eget, viverra vehicula felis.
+</p>
+<p>
+	Duis sed nibh quis enim maximus tristique sed id ipsum. Mauris elementum pellentesque tincidunt. Quisque egestas mollis neque luctus posuere. Proin pretium vel felis ut volutpat. Ut at sem elit. Etiam eu imperdiet nibh. Phasellus sed felis sit amet magna elementum placerat sed in risus. Vestibulum fermentum ut ante non pellentesque. Sed pharetra diam vel augue tempus blandit. Cras nunc metus, condimentum ac maximus a, euismod nec purus. Vivamus elementum mauris nisi, et imperdiet leo fringilla sit amet. Nulla condimentum libero et nulla placerat, eget dictum tellus aliquam. Maecenas eget augue sed justo malesuada ornare. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eu placerat tellus.
+</p>
+</body>
+<script>
+	rangy.init();
+	rangy.setPhrase(document.body, "am erat volutpat. In hac habitasse platea dictumst. Ut congue urna at urna pharet");
+</script>
+</html>
